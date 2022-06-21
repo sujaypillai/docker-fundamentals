@@ -1,8 +1,7 @@
-# Welcome to MkDocs
+# Docker Fundamentals
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
+## Introduction and brief history of Docker
 
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.
