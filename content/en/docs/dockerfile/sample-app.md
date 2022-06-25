@@ -62,7 +62,7 @@ Now that we have an image, let’s run the application. To do so, we will use th
 
   1. Start your container using the docker run command and specify the name of the image we just created:
   ```bash
-  docker run -dp 3000:3000 getting-started
+  docker run -dp 3000:3000 todoapp
   ```
 
   2. After a few seconds, open your web browser to http://localhost:3000. You should see our app.
