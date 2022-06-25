@@ -1,5 +1,5 @@
 ---
-title: "Docker Images"
+title: "Container Image"
 description: "What is a docker image?"
 lead: ""
 date: 2020-10-06T08:49:15+00:00
