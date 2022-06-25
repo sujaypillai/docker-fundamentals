@@ -25,6 +25,3 @@ npm install
 
 Delete the temporary directories:
 
-```bash
-npm run clean
-```
