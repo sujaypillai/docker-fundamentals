@@ -26,6 +26,11 @@ Layers make it possible to reuse components and configurations across images. Co
 
 {{< details "How to check layers in a docker image?" >}}
 ```bash
-docker image history
+$ docker image history ubuntu
+
+IMAGE          CREATED       CREATED BY                                      SIZE      COMMENT
+27941809078c   2 weeks ago   /bin/sh -c #(nop)  CMD ["bash"]                 0B        
+<missing>      2 weeks ago   /bin/sh -c #(nop)  ADD file:11157b07dde10107f…   77.8MB    
+
 ```
 {{< /details >}}
