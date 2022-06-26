@@ -46,28 +46,16 @@ For now, we will create the network first and attach the MySQL container at star
 
 1. Create the network.
 
-    ```console
+    ```
     $ docker network create todo-app
     ```
 
 2. Start a MySQL container and attach it to the network. We're also going to define a few environment variables that the
   database will use to initialize the database (see the "Environment Variables" section in the [MySQL Docker Hub listing](https://hub.docker.com/_/mysql/)).
 
-    ```console
-    $ docker run -d \
-        --network todo-app --network-alias mysql \
-        -v todo-mysql-data:/var/lib/mysql \
-        -e MYSQL_ROOT_PASSWORD=secret \
-        -e MYSQL_DATABASE=todos \
-        mysql:5.7
     ```
-    
-    If you are using an ARM based chip, e.g. Macbook M1 Chips / Apple Silicon, then use this command.
-    
-    ```console
     $ docker run -d \
         --network todo-app --network-alias mysql \
-        --platform "linux/amd64" \
         -v todo-mysql-data:/var/lib/mysql \
         -e MYSQL_ROOT_PASSWORD=secret \
         -e MYSQL_DATABASE=todos \
@@ -76,7 +64,7 @@ For now, we will create the network first and attach the MySQL container at star
 
     If you are using Windows then use this command in PowerShell.
 
-    ```powershell
+    ```
     PS> docker run -d `
         --network todo-app --network-alias mysql `
         -v todo-mysql-data:/var/lib/mysql `
