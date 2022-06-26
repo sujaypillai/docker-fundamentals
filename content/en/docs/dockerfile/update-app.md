@@ -14,8 +14,7 @@ toc: true
 ---
 
 As a small feature request, we’ve been asked by the product team to change the “empty text” when we don’t have any todo list items. They would like to change it to the following:
-
-    {{< alert icon="👉" text="You have no todo items yet! Add one above!" />}}
+{{< alert icon="👉" text="You have no todo items yet! Add one above!" />}}
 
 Pretty simple, right? Let’s make the change.
 
