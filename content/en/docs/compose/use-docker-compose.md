@@ -34,7 +34,7 @@ After installation, you should be able to run the following and see version info
 1. At the root of the app project, create a file named `docker-compose.yml`.
 
 2. In the compose file, we'll start off by defining the schema version. In most cases, it's best to use
-   the latest supported version. You can look at the [Compose file reference](../compose/compose-file/index.md)
+   the latest supported version. You can look at the [Compose file reference](https://docs.docker.com/compose/compose-file/)
    for the current schema versions and the compatibility matrix.
 
     ```yaml
@@ -121,7 +121,7 @@ PS> docker run -dp 3000:3000 `
     ```
  
 5. Next, we'll migrate both the working directory (`-w /app`) and the volume mapping (`-v "$(pwd):/app"`) by using
-   the `working_dir` and `volumes` definitions. Volumes also has a [short](../compose/compose-file/compose-file-v3.md#short-syntax-3) and [long](../compose/compose-file/compose-file-v3.md#long-syntax-3) syntax.
+   the `working_dir` and `volumes` definitions. Volumes also has a [short](https://docs.docker.com/compose/compose-file/#short-syntax-2) and [long](https://docs.docker.com/compose/compose-file/#long-syntax-2) syntax.
 
     One advantage of Docker Compose volume definitions is we can use relative paths from the current directory.
 
